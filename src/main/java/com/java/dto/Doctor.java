@@ -15,9 +15,13 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotEmpty;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Doctor {
 		@Id @GeneratedValue
 		int id;

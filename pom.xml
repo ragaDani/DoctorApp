@@ -91,10 +91,10 @@
 			<plugin>
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.27.2</version>
+				<version>0.33.0</version>
 				<configuration>
 
-					<dockerHost>10.0.0.242</dockerHost>
+					<dockerHost>tcp://localhost:2375</dockerHost>
 					<authConfig>
 						<username>ragadev</username>
 						<password>${docker-password}</password>
@@ -118,6 +118,7 @@
 								</assembly>
 								<tags>
 									<tag>latest</tag>
+									<version>1.1</version>
 								</tags>
 							</build>
 						</image>
